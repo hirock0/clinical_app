@@ -35,19 +35,18 @@ export default function Testimonials() {
           leaders staff hard-to-fill roles that require highly-specialized,
           high-performing candidates.
         </p>
-
         <div className="grid grid-cols-3 max-lg:grid-cols-2 max-lg:gap-8 max-md:grid-cols-1 gap-6">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
               className="bg-blue-50 rounded-lg p-6 shadow-sm h-[484px] flex items-center relative"
             >
-              <FaQuoteRight className="text-7xl text-[#63e6b8] absolute -top-8 right-1/10 p-2" />
-              <div className=" w-3/4 mx-auto text-[20px] ">
-                <p className=" text-gray-800 mb-4  leading-7">
+              <FaQuoteRight className="text-7xl text-[#63e6b8] absolute -top-8 right-1/10 p-2"/>
+              <div className="w-3/4 mx-auto text-xl">
+                <p className="text-[#002454] mb-4 leading-7">
                   “{testimonial?.quote}”
                 </p>
-                <div className="mt-6 font-bold text-[#002454] ">
+                <div className="mt-6 font-bold text-[#002454]">
                   {testimonial?.author}
                 </div>
                 <div className=" text-gray-500">{testimonial?.position}</div>
