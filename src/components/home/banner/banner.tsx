@@ -2,7 +2,7 @@ import Nav from "@/components/nav/nav";
 
 const Banner = () => {
   return (
-    <div className="bg-[#0468af] h-[600px] px-[5%]">
+    <div className="bg-[#0468af] ">
         <div className="">
         <Nav />
 

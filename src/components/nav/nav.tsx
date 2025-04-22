@@ -1,8 +1,13 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { FaCaretDown } from "react-icons/fa";
 import LinkInfo from "../ui/nav/links/linkInfo";
 import { HiMenuAlt4 } from "react-icons/hi";
+import { useEffect, useState } from "react";
+import { FaAngleRight, FaCirclePlus, FaCircleMinus } from "react-icons/fa6";
+import Max_lg_links from "../ui/nav/max_lg_links/max_lg_links";
+
 const Nav = () => {
   const NavInfo = [
     {
@@ -37,18 +42,54 @@ const Nav = () => {
     },
   ];
 
+  const [menuFlag, setMenuFlag] = useState(false);
+  const [menuLgFlag, setMenuLgFlag] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("resize", (e: any) => {
+      const width = e.target.innerWidth;
+
+      if (width > 1024) {
+        setMenuFlag(false);
+      }
+    });
+    return () => {
+      window.removeEventListener("resize", (e: any) => {
+        const width = e.target.innerWidth;
+
+        if (width > 1024) {
+          setMenuFlag(false);
+        }
+      });
+    };
+  }, []);
+
   return (
-    <nav className=" text-white relative lg:border-b lg:h-[189.34px]  lg:border-b-cyan-400">
-      <div className=" py-[20px]  h-full flex items-center justify-between">
+    <nav
+      className={`${
+        menuFlag && "bg-white"
+      } text-white relative lg:border-b lg:h-[189.34px]  lg:border-b-cyan-400`}
+    >
+      <div className=" py-[20px] px-[5%] h-full flex items-center justify-between">
         <div className="">
           <div className=" h-[47.55px] w-[214px] my-[12px] mx-[5px]">
-            <Image
-              src={"https://i.ibb.co.com/7txdX2HG/logo-png.png"}
-              alt="logo"
-              width={500}
-              height={500}
-              className=" w-full h-full object-cover"
-            />
+            {!menuFlag ? (
+              <Image
+                src={"https://i.ibb.co.com/7txdX2HG/logo-png.png"}
+                alt="logo"
+                width={500}
+                height={500}
+                className=" w-full h-full object-cover"
+              />
+            ) : (
+              <Image
+                src={"https://i.ibb.co.com/Tx912LkL/logo-dk-png.png"}
+                alt="logo"
+                width={500}
+                height={500}
+                className=" w-full h-full object-cover"
+              />
+            )}
           </div>
           <div className=" max-lg:hidden flex mt-10 max-[1400px]:flex-col max-[1400px]:items-start gap-2 items-center">
             <h1 className=" text-[14px] font-semibold">For Organizations:</h1>
@@ -79,9 +120,36 @@ const Nav = () => {
             </div>
           </div>
           <div className=" lg:hidden">
-            <button className=" cursor-pointer">
+            <button
+              onClick={(e) => {
+                e.stopPropagation(), setMenuFlag(!menuFlag);
+              }}
+              className={`${menuFlag && "text-black"} cursor-pointer`}
+            >
               <HiMenuAlt4 size={60} />
             </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className={`${
+          !menuFlag ? "h-0" : "h-[500px] border-t border-t-black "
+        } bg-white w-full transition-all`}
+      >
+        <div className={`${!menuFlag ? "hidden" : "block"} text-black px-[5%]`}>
+          <div className="">
+            <h1>For Organizations:</h1>
+            <ul>
+              <li>
+                <Max_lg_links />
+              </li>
+              <li>
+                <Max_lg_links />
+              </li>
+              <li>
+                <Max_lg_links />
+              </li>
+            </ul>
           </div>
         </div>
       </div>
