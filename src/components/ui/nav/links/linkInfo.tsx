@@ -30,6 +30,7 @@ const LinkInfo = ({ item }: { item: any }) => {
             </div>
 
             <div className="">
+              
               <div className=" grid grid-cols-2 gap-5">
                 {item?.info?.links?.map((item: any, index: any) => (
                   <div key={index} className="">
@@ -43,6 +44,8 @@ const LinkInfo = ({ item }: { item: any }) => {
                   </div>
                 ))}
               </div>
+
+
             </div>
           </div>
           <div className=" w-1/4 p-5 bg-slate-200">df</div>
