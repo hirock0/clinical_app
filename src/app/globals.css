@@ -1,4 +1,6 @@
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-condensed');
 @import "tailwindcss";
+
 body{
-  font-family: 'proxima-nova', sans-serif;
+  font-family: 'Proxima Nova Condensed', sans-serif;
 }

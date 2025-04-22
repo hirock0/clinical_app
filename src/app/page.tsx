@@ -1,21 +1,19 @@
-import Footer from "@/components/footer/footer";
+import ContactUs from "@/components/contact-us/ContactUs";
+import ExperienceNumber from "@/components/experience/ExperienceNumber";
 import Banner from "@/components/home/banner/banner";
-
+import Opportunity from "@/components/opportunity/Opportunity";
+import Soluation from "@/components/soluation/Soluation";
+import Testimonials from "@/components/testimonials/Testimonials";
 
 const Home = () => {
   return (
     <main>
-      <div className=" max-w-[1440px] mx-auto">
-        <div className=" ">
-          <div className="">
-            <Banner/>
-          </div>
-          <div className="">main</div>
-          <div className="">
-            <Footer />
-          </div>
-        </div>
-      </div>
+      <Banner />
+      <ExperienceNumber />
+      <Soluation />
+      <Opportunity />
+      <Testimonials />
+      <ContactUs />
     </main>
   );
 };
