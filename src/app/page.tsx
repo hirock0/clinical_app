@@ -5,7 +5,7 @@ import Banner from "@/components/home/banner/banner";
 const Home = () => {
   return (
     <main>
-      <div className=" max-w-[1440px] mx-auto">
+      <div className="">
         <div className=" ">
           <div className="">
             <Banner/>
