@@ -48,7 +48,7 @@ const LinkInfo = ({ item }: { item: any }) => {
 
             </div>
           </div>
-          <div className=" w-1/4 p-5 bg-slate-200">dfsfs</div>
+          <div className=" w-1/4 p-5 bg-slate-200">dfsfs  dsa d</div>
         </div>
       </div>
     </div>
