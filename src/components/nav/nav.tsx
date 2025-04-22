@@ -8,6 +8,11 @@ import { useEffect, useState } from "react";
 import { FaAngleRight, FaCirclePlus, FaCircleMinus } from "react-icons/fa6";
 import Max_lg_links from "../ui/nav/max_lg_links/max_lg_links";
 
+import { TbNurse } from "react-icons/tb";
+
+
+
+
 const Nav = () => {
   const NavInfo = [
     {
@@ -18,24 +23,37 @@ const Nav = () => {
         links: [
           {
             title: "Allied",
+            icon:"icon",
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
           {
             title: "Nursing",
+            icon:<TbNurse />,
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
+
           {
             title: "Care Management",
+            icon:"icon",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+
+          {
+            title: "Revenue Cycle",
+            icon:"icon",
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
           {
-            title: "Revenue Cycle",
+            title: "Insurance",
+            icon:<TbNurse />,
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
@@ -52,24 +70,29 @@ const Nav = () => {
         links: [
           {
             title: "Allied",
+            icon:"icon",
+            
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
           {
             title: "Nursing",
+            icon:"icon",
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
           {
             title: "Care Management",
+            icon:"icon",
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
           {
             title: "Revenue Cycle",
+            icon:"icon",
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
@@ -86,24 +109,28 @@ const Nav = () => {
         links: [
           {
             title: "Allied",
+            icon:"icon",
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
           {
             title: "Nursing",
+            icon:"icon",
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
           {
             title: "Care Management",
+            icon:"icon",
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
           {
             title: "Revenue Cycle",
+            icon:"icon",
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
@@ -120,12 +147,14 @@ const Nav = () => {
         links: [
           {
             title: "Allied",
+            icon:"icon",
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
           {
             title: "Nursing",
+            icon:"icon",
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
@@ -138,6 +167,7 @@ const Nav = () => {
           },
           {
             title: "Revenue Cycle",
+            icon:"icon",
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
@@ -156,24 +186,28 @@ const Nav = () => {
         links: [
           {
             title: "Allied",
+            icon:"icon",
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
           {
             title: "Nursing",
+            icon:"icon",
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
           {
             title: "Care Management",
+            icon:"icon",
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
           {
             title: "Revenue Cycle",
+            icon:"icon",
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
@@ -184,30 +218,35 @@ const Nav = () => {
     },
     {
       title: "Resource Center",
+      
       info: {
         descriptions:
           "Hire the right healthcare staff with speed and precision locally or nationwide.",
         links: [
           {
             title: "Allied",
+            icon:"icon",
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
           {
             title: "Nursing",
+            icon:"icon",
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
           {
             title: "Care Management",
+            icon:"icon",
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
           {
             title: "Revenue Cycle",
+            icon:"icon",
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
@@ -224,24 +263,28 @@ const Nav = () => {
         links: [
           {
             title: "Allied",
+            icon:"icon",
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
           {
             title: "Nursing",
+            icon:"icon",
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
           {
             title: "Care Management",
+            icon:"icon",
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
           {
             title: "Revenue Cycle",
+            icon:"icon",
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
