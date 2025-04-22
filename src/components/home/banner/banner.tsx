@@ -8,7 +8,7 @@ const Banner = () => {
 
         </div>
         <div className=" px-[5%] h-[50vh]">
-            Other
+            Othe
         </div>
      
     </div>
