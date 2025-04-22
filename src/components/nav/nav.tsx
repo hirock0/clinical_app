@@ -43,7 +43,6 @@ const Nav = () => {
   ];
 
   const [menuFlag, setMenuFlag] = useState(false);
-  const [menuLgFlag, setMenuLgFlag] = useState(false);
 
   useEffect(() => {
     window.addEventListener("resize", (e: any) => {
@@ -122,11 +121,23 @@ const Nav = () => {
           <div className=" lg:hidden">
             <button
               onClick={(e) => {
-                e.stopPropagation(), setMenuFlag(!menuFlag);
+                e.stopPropagation();
+                setMenuFlag(!menuFlag);
               }}
-              className={`${menuFlag && "text-black"} cursor-pointer`}
+              className="relative w-9 h-[22px] cursor-pointer"
             >
-              <HiMenuAlt4 size={60} />
+              <div className="relative w-full h-full">
+                <span
+                  className={`absolute top-0 left-0 h-[9px] w-full rounded-[2px] transition-all duration-300 ease-in-out ${
+                    menuFlag ? "rotate-45 top-[6.5px] bg-black" : "bg-white"
+                  }`}
+                />
+                <span
+                  className={`absolute bottom-0 left-0 h-[9px] w-full rounded-[2px]  transition-all duration-300 ease-in-out ${
+                    menuFlag ? "-rotate-45 bottom-[6.5px] bg-black" : "bg-white"
+                  }`}
+                />
+              </div>
             </button>
           </div>
         </div>
