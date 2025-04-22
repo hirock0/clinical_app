@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaCaretDown } from "react-icons/fa";
 import LinkInfo from "../ui/nav/links/linkInfo";
+import { HiMenuAlt4 } from "react-icons/hi";
 const Nav = () => {
   const NavInfo = [
     {
@@ -37,8 +38,8 @@ const Nav = () => {
   ];
 
   return (
-    <nav className=" text-white relative border-b h-[189.34px]  border-b-cyan-400">
-      <div className=" py-[20px] h-full flex items-center justify-between">
+    <nav className=" text-white relative lg:border-b lg:h-[189.34px]  lg:border-b-cyan-400">
+      <div className=" py-[20px]  h-full flex items-center justify-between">
         <div className="">
           <div className=" h-[47.55px] w-[214px] my-[12px] mx-[5px]">
             <Image
@@ -49,9 +50,9 @@ const Nav = () => {
               className=" w-full h-full object-cover"
             />
           </div>
-          <div className=" flex mt-10  gap-2 items-center">
+          <div className=" max-lg:hidden flex mt-10 max-[1400px]:flex-col max-[1400px]:items-start gap-2 items-center">
             <h1 className=" text-[14px] font-semibold">For Organizations:</h1>
-            <ul className=" font-semibold flex  gap-5 text-[18px] items-center">
+            <ul className=" font-semibold flex  gap-5 text-[18px] max-[1400px]:text-[15px] items-center">
               {NavInfo?.map((item, index) => (
                 <li key={index} className=" group">
                   <LinkInfo title={item?.title} href={item?.href} />
@@ -62,8 +63,8 @@ const Nav = () => {
         </div>
         {/* right_start */}
         <div className=" h-full flex items-end ">
-          <div className=" flex  gap-5 ">
-            <ul className=" font-semibold  h-full flex  gap-5 text-[15px] items-center">
+          <div className=" max-lg:hidden flex  gap-5 ">
+            <ul className=" font-semibold  h-full flex  gap-5 text-[15px] max-[1400px]:text-[12px]  items-center">
               {NavInfo2?.map((item, index) => (
                 <li key={index} className=" group">
                   <LinkInfo title={item?.title} href={item?.href} />
@@ -76,6 +77,11 @@ const Nav = () => {
                 GET STARTED
               </button>
             </div>
+          </div>
+          <div className=" lg:hidden">
+            <button className=" cursor-pointer">
+              <HiMenuAlt4 size={60} />
+            </button>
           </div>
         </div>
       </div>
