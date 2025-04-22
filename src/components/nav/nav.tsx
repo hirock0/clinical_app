@@ -9,28 +9,23 @@ import { FaAngleRight, FaCirclePlus, FaCircleMinus } from "react-icons/fa6";
 import Max_lg_links from "../ui/nav/max_lg_links/max_lg_links";
 
 import { TbNurse } from "react-icons/tb";
-
-
-
+import { SiFsecure } from "react-icons/si";
+import { BsUmbrella } from "react-icons/bs";
+import { LuBriefcaseMedical } from "react-icons/lu";
+import { GiWaterRecycling } from "react-icons/gi";
 
 const Nav = () => {
   const NavInfo = [
     {
       title: "Healthcare",
+
       info: {
         descriptions:
           "Hire the right healthcare staff with speed and precision locally or nationwide.",
         links: [
           {
             title: "Allied",
-            icon:"icon",
-            description:
-              "Quickly fill the critical clinical roles that provide effective patient care.",
-            href: "/",
-          },
-          {
-            title: "Nursing",
-            icon:<TbNurse />,
+            icon: <SiFsecure />,
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
@@ -38,7 +33,14 @@ const Nav = () => {
 
           {
             title: "Care Management",
-            icon:"icon",
+            icon: <LuBriefcaseMedical />,
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Nursing",
+            icon: <TbNurse />,
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
@@ -46,22 +48,37 @@ const Nav = () => {
 
           {
             title: "Revenue Cycle",
-            icon:"icon",
+            icon: <GiWaterRecycling />,
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
           {
             title: "Insurance",
-            icon:<TbNurse />,
+            icon: <BsUmbrella />,
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
         ],
       },
+
+      descriptions: [
+        {
+          p: "Calculate the True Cost of Your Healthcare Vacancies",
+        },
+        {
+          p: "Are unfilled healthcare positions draining your finances and causing operational disruptions?",
+        },
+        {
+          p: "Our calculator shows the precise impact on your organization.",
+        },
+      ],
+      button: "USE THE CALCLUATOR",
+
       href: "/healthcare",
     },
+
     {
       title: "Life Sciences",
       info: {
@@ -70,29 +87,37 @@ const Nav = () => {
         links: [
           {
             title: "Allied",
-            icon:"icon",
-            
+            icon: <SiFsecure />,
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+
+          {
+            title: "Care Management",
+            icon: <LuBriefcaseMedical />,
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
           {
             title: "Nursing",
-            icon:"icon",
+            icon: <TbNurse />,
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
-          {
-            title: "Care Management",
-            icon:"icon",
-            description:
-              "Quickly fill the critical clinical roles that provide effective patient care.",
-            href: "/",
-          },
+
           {
             title: "Revenue Cycle",
-            icon:"icon",
+            icon: <GiWaterRecycling />,
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Insurance",
+            icon: <BsUmbrella />,
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
@@ -100,6 +125,18 @@ const Nav = () => {
         ],
       },
       href: "/life_sciences",
+      descriptions: [
+        {
+          p: "Calculate the True Cost of Your Healthcare Vacancies",
+        },
+        {
+          p: "Are unfilled healthcare positions draining your finances and causing operational disruptions?",
+        },
+        {
+          p: "Our calculator shows the precise impact on your organization.",
+        },
+      ],
+      button: "USE THE CALCLUATOR",
     },
     {
       title: "Technology",
@@ -109,28 +146,37 @@ const Nav = () => {
         links: [
           {
             title: "Allied",
-            icon:"icon",
+            icon: <SiFsecure />,
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+
+          {
+            title: "Care Management",
+            icon: <LuBriefcaseMedical />,
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
           {
             title: "Nursing",
-            icon:"icon",
+            icon: <TbNurse />,
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
-          {
-            title: "Care Management",
-            icon:"icon",
-            description:
-              "Quickly fill the critical clinical roles that provide effective patient care.",
-            href: "/",
-          },
+
           {
             title: "Revenue Cycle",
-            icon:"icon",
+            icon: <GiWaterRecycling />,
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Insurance",
+            icon: <BsUmbrella />,
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
@@ -138,6 +184,18 @@ const Nav = () => {
         ],
       },
       href: "/technology",
+      descriptions: [
+        {
+          p: "Calculate the True Cost of Your Healthcare Vacancies",
+        },
+        {
+          p: "Are unfilled healthcare positions draining your finances and causing operational disruptions?",
+        },
+        {
+          p: "Our calculator shows the precise impact on your organization.",
+        },
+      ],
+      button: "USE THE CALCLUATOR",
     },
     {
       title: "Government",
@@ -147,27 +205,37 @@ const Nav = () => {
         links: [
           {
             title: "Allied",
-            icon:"icon",
+            icon: <SiFsecure />,
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+
+          {
+            title: "Care Management",
+            icon: <LuBriefcaseMedical />,
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
           {
             title: "Nursing",
-            icon:"icon",
+            icon: <TbNurse />,
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
-          {
-            title: "Care Management",
-            description:
-              "Quickly fill the critical clinical roles that provide effective patient care.",
-            href: "/",
-          },
+
           {
             title: "Revenue Cycle",
-            icon:"icon",
+            icon: <GiWaterRecycling />,
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Insurance",
+            icon: <BsUmbrella />,
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
@@ -175,6 +243,18 @@ const Nav = () => {
         ],
       },
       href: "/government",
+      descriptions: [
+        {
+          p: "Calculate the True Cost of Your Healthcare Vacancies",
+        },
+        {
+          p: "Are unfilled healthcare positions draining your finances and causing operational disruptions?",
+        },
+        {
+          p: "Our calculator shows the precise impact on your organization.",
+        },
+      ],
+      button: "USE THE CALCLUATOR",
     },
   ];
   const NavInfo2 = [
@@ -186,28 +266,37 @@ const Nav = () => {
         links: [
           {
             title: "Allied",
-            icon:"icon",
+            icon: <SiFsecure />,
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+
+          {
+            title: "Care Management",
+            icon: <LuBriefcaseMedical />,
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
           {
             title: "Nursing",
-            icon:"icon",
+            icon: <TbNurse />,
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
-          {
-            title: "Care Management",
-            icon:"icon",
-            description:
-              "Quickly fill the critical clinical roles that provide effective patient care.",
-            href: "/",
-          },
+
           {
             title: "Revenue Cycle",
-            icon:"icon",
+            icon: <GiWaterRecycling />,
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Insurance",
+            icon: <BsUmbrella />,
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
@@ -215,38 +304,59 @@ const Nav = () => {
         ],
       },
       href: "/healthcare",
+      descriptions: [
+        {
+          p: "Calculate the True Cost of Your Healthcare Vacancies",
+        },
+        {
+          p: "Are unfilled healthcare positions draining your finances and causing operational disruptions?",
+        },
+        {
+          p: "Our calculator shows the precise impact on your organization.",
+        },
+      ],
+      button: "USE THE CALCLUATOR",
     },
     {
       title: "Resource Center",
-      
+
       info: {
         descriptions:
           "Hire the right healthcare staff with speed and precision locally or nationwide.",
         links: [
           {
             title: "Allied",
-            icon:"icon",
+            icon: <SiFsecure />,
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+
+          {
+            title: "Care Management",
+            icon: <LuBriefcaseMedical />,
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
           {
             title: "Nursing",
-            icon:"icon",
+            icon: <TbNurse />,
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
-          {
-            title: "Care Management",
-            icon:"icon",
-            description:
-              "Quickly fill the critical clinical roles that provide effective patient care.",
-            href: "/",
-          },
+
           {
             title: "Revenue Cycle",
-            icon:"icon",
+            icon: <GiWaterRecycling />,
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Insurance",
+            icon: <BsUmbrella />,
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
@@ -254,6 +364,18 @@ const Nav = () => {
         ],
       },
       href: "/life_sciences",
+      descriptions: [
+        {
+          p: "Calculate the True Cost of Your Healthcare Vacancies",
+        },
+        {
+          p: "Are unfilled healthcare positions draining your finances and causing operational disruptions?",
+        },
+        {
+          p: "Our calculator shows the precise impact on your organization.",
+        },
+      ],
+      button: "USE THE CALCLUATOR",
     },
     {
       title: "About Us",
@@ -263,28 +385,37 @@ const Nav = () => {
         links: [
           {
             title: "Allied",
-            icon:"icon",
+            icon: <SiFsecure />,
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+
+          {
+            title: "Care Management",
+            icon: <LuBriefcaseMedical />,
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
           {
             title: "Nursing",
-            icon:"icon",
+            icon: <TbNurse />,
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
           },
-          {
-            title: "Care Management",
-            icon:"icon",
-            description:
-              "Quickly fill the critical clinical roles that provide effective patient care.",
-            href: "/",
-          },
+
           {
             title: "Revenue Cycle",
-            icon:"icon",
+            icon: <GiWaterRecycling />,
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Insurance",
+            icon: <BsUmbrella />,
             description:
               "Quickly fill the critical clinical roles that provide effective patient care.",
             href: "/",
@@ -292,6 +423,18 @@ const Nav = () => {
         ],
       },
       href: "/technology",
+      descriptions: [
+        {
+          p: "Calculate the True Cost of Your Healthcare Vacancies",
+        },
+        {
+          p: "Are unfilled healthcare positions draining your finances and causing operational disruptions?",
+        },
+        {
+          p: "Our calculator shows the precise impact on your organization.",
+        },
+      ],
+      button: "USE THE CALCLUATOR",
     },
   ];
 
@@ -454,20 +597,18 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav
-      className={`${
-        menuFlag && "bg-white"
-      } text-white relative bg-[#0468af]`}
-    >
-      <div className="max-w-[1524px] mx-auto w-11/12 flex items-center justify-between lg:border-b lg:border-b-cyan-400 lg:pt-10">
-        <div>
-          <div className="w-[214px]">
+    <nav className={`${menuFlag && "bg-white"} text-white  bg-[#0468af]`}>
+      <div className="max-w-[1524px] relative lg:h-[160px] lg:py-2 max-lg:py-8 mx-auto w-11/12 flex items-center justify-between lg:border-b lg:border-blue-500">
+        <div className="  flex flex-col justify-between h-full">
+          <div className=""></div>
+          <div className="w-[214px] max-lg:w-[170px]">
             {!menuFlag ? (
               <Image
                 src={"https://i.ibb.co.com/7txdX2HG/logo-png.png"}
                 alt="logo"
                 width={500}
-                height={300}
+                height={500}
+                priority
                 className=" w-full h-full object-cover"
               />
             ) : (
@@ -475,14 +616,15 @@ const Nav = () => {
                 src={"https://i.ibb.co.com/Tx912LkL/logo-dk-png.png"}
                 alt="logo"
                 width={500}
-                height={300}
+                height={500}
+                priority
                 className=" w-full h-full object-cover"
               />
             )}
           </div>
-          <div className=" max-lg:hidden flex pt-8 pb-5 max-[1400px]:flex-col max-[1400px]:items-start space-x-6 items-center">
+          <div className=" max-lg:hidden flex max-[1400px]:flex-col max-[1400px]:items-start space-x-6 items-center">
             <h1 className=" text-sm font-semibold">For Organizations:</h1>
-            <ul className="font-semibold flex justify-center space-x-6 text-lg max-[1400px]:text-[15px] items-center">
+            <ul className="font-semibold flex justify-center space-x-6 text-lg max-[1400px]:text-[15px]  items-center">
               {NavInfo?.map((item, index) => (
                 <li key={index} className=" group">
                   <LinkInfo item={item} />
@@ -493,7 +635,7 @@ const Nav = () => {
         </div>
         {/* right_start */}
         <div className=" h-full flex items-end ">
-          <div className=" max-lg:hidden flex  gap-5 ">
+          <div className=" max-lg:hidden flex  gap-5">
             <ul className=" font-semibold  h-full flex  gap-5 text-[15px] max-[1400px]:text-[12px]  items-center">
               {NavInfo2?.map((item, index) => (
                 <li key={index} className=" group">
@@ -502,12 +644,13 @@ const Nav = () => {
               ))}
             </ul>
 
-            <div className=" relative -top-5">
-              <button className=" text-[#004582] font-semibold text-sm bg-[#63E6B8] px-4 py-2 rounded">
+            <div className=" relative -top-3">
+              <button className=" text-[#004582] tracking-wide font-semibold text-[15px] bg-[#63E6B8] px-5 py-1.5 rounded">
                 GET STARTED
               </button>
             </div>
           </div>
+
           {/* hamb_start */}
           <div className=" lg:hidden">
             <button
@@ -535,6 +678,7 @@ const Nav = () => {
           </div>
         </div>
       </div>
+
       <div
         className={`${
           !menuFlag ? "h-0" : "h-full border-t  border-t-black  "
