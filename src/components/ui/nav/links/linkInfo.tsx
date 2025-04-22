@@ -15,11 +15,10 @@ const LinkInfo = ({ item }: { item: any }) => {
       </Link>
       <div className=" hidden group-hover:block group-hover:absolute group-hover:left-0 group-hover:right-0  z-50  group-hover:bg-white group-hover:h-[300px] rounded-lg overflow-hidden transition-all text-slate-600 ">
         <div className=" flex w-full h-full">
-          <div className=" w-3/4 flex gap-5 p-5 ">
-            <div className=" w-1/4">
-              <h1 className=" text-4xl font-bold text-blue-900 tracking-tight">
-                {item?.title}
-              </h1>
+          <div className=" w-3/4 p-5 ">
+            <div className="w-1/4">
+              <h1 className=" text-4xl font-bold text-blue-900 tracking-tight">{item?.title}</h1>
+
               <p>{item?.info?.descriptions}</p>
 
               <Link href={""}>
@@ -39,6 +38,7 @@ const LinkInfo = ({ item }: { item: any }) => {
                         {item?.icon}
                       </div>
                       <h1 className=" text-2xl text-blue-500/95">{item?.title}</h1>
+
                     </div>
                     <p>{item?.description}</p>
                   </div>
