@@ -1,10 +1,11 @@
 
 import Image from "next/image";
+import Link from "next/link";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Banner = () => {
   return (
-    <section className="relative bg-[#0468af] text-white lg:pt-10 lg:pb-20 px-6 lg:px-20 overflow-hidden">
+    <section className="relative bg-[#0468af] text-white lg:pt-10 lg:pb-20 px-6 lg:px-20 overflow-hidden ">
       {/* Background Image - Bottom Right */}
       <div className="absolute bottom-0 right-0 h-full w-full">
         <Image
@@ -32,12 +33,12 @@ const Banner = () => {
             <button className="bg-[#63e6b8] hover:bg-white text-[#002454] font-semibold px-8 py-3 rounded transition-colors duration-300 text-lg lg:text-2xl cursor-pointer">
               HIRE TALENT
             </button>
-            <a
+            <Link
               href="#"
               className="border-2 border-white hover:border-[#63e6b8] px-8 py-3 rounded hover:bg-[#63e6b8] hover:text-[#002454] font-semibold transition-colors duration-300 flex items-center text-lg lg:text-2xl cursor-pointer"
             >
               SEARCH JOBS <span className="ml-1 text-sm"><FaExternalLinkAlt /></span>
-            </a>
+            </Link>
           </div>
         </div>
 
