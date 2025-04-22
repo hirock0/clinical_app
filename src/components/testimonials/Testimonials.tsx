@@ -39,7 +39,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-blue-50 rounded-lg p-6 shadow-sm h-[484px] flex items-center relative"
+              className="bg-blue-50 rounded-lg p-10 shadow-sm flex items-center relative"
             >
               <FaQuoteRight className="text-7xl text-[#63e6b8] absolute -top-8 right-1/10 p-2"/>
               <div className="w-3/4 mx-auto text-xl">
