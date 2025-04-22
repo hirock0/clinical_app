@@ -18,7 +18,7 @@ const LinkInfo = ({ item }: { item: any }) => {
       <div className=" hidden group-hover:block group-hover:absolute group-hover:left-0 group-hover:right-0  z-50  group-hover:bg-white group-hover:h-[300px] rounded-lg overflow-hidden transition-all text-slate-600 ">
         <div className=" flex w-full h-full">
           <div className=" w-3/4 p-5 ">
-            <div className=" w-1/4">
+            <div className="w-1/4">
               <h1 className=" text-4xl font-bold text-blue-900 tracking-tight">{item?.title}</h1>
               <p>{item?.info?.descriptions}</p>
 
@@ -29,11 +29,11 @@ const LinkInfo = ({ item }: { item: any }) => {
               </Link>
             </div>
 
-            <div className="">
-              <div className="">
+            <div>
+              <div >
                 {
                   item?.info?.links?.map((item:any,index:any)=>(
-                    <div key={index} className="">
+                    <div key={index}>
                         {item?.href}
                     </div>
                   ))
