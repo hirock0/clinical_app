@@ -7,7 +7,7 @@ const Banner = () => {
         <Nav />
 
         </div>
-        <div className=" px-[5%]">
+        <div className=" px-[5%] h-[50vh]">
             Other
         </div>
      

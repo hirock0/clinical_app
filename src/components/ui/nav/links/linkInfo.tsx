@@ -15,9 +15,9 @@ const LinkInfo = (props: any) => {
           <FaCaretDown size={20} className=" text-cyan-200" />
         </div>
       </Link>
-      <div className=" hidden group-hover:block group-hover:absolute group-hover:left-0 group-hover:right-0  z-50  group-hover:bg-white group-hover:h-[300px] rounded-lg overflow-hidden transition-all text-black">
+      <div className=" hidden group-hover:block group-hover:absolute group-hover:left-0 group-hover:right-0  z-50  group-hover:bg-white group-hover:h-[300px] rounded-lg overflow-hidden transition-all text-black ">
         <div className=" flex w-full h-full">
-          <div className=" w-3/4 p-5">as</div>
+          <div className=" w-3/4 p-5 bg-red-100">as</div>
           <div className=" w-1/4 p-5 bg-slate-200">df</div>
         </div>
       </div>
