@@ -41,7 +41,7 @@ const Max_lg_links = ({ item }: { item: any }) => {
           <div className="my-10" key={index}>
             <Link href={item?.href} className=" flex items-center">
               <GoDotFill size={10} />
-              <h1 className=" ml-2 text-[18px] text-[#004582] ">
+              <h1 className=" ml-2 text-lg text-[#004582] ">
                 {item?.title}
               </h1>
               <FaAngleRight size={10} />

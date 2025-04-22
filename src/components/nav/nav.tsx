@@ -414,17 +414,17 @@ const Nav = () => {
     <nav
       className={`${
         menuFlag && "bg-white"
-      } text-white relative lg:border-b lg:h-[189.34px]  lg:border-b-cyan-400`}
+      } text-white relative bg-[#0468af]`}
     >
-      <div className=" py-[20px] px-[5%] h-full flex items-center justify-between">
-        <div className="">
-          <div className=" h-[47.55px] w-[214px] max-lg:h-[35px] max-lg:w-[170px] my-[12px] mx-[5px]">
+      <div className="max-w-[1524px] mx-auto w-11/12 flex items-center justify-between lg:border-b lg:border-b-cyan-400 lg:pt-10">
+        <div>
+          <div className="w-[214px]">
             {!menuFlag ? (
               <Image
                 src={"https://i.ibb.co.com/7txdX2HG/logo-png.png"}
                 alt="logo"
                 width={500}
-                height={500}
+                height={300}
                 className=" w-full h-full object-cover"
               />
             ) : (
@@ -432,14 +432,14 @@ const Nav = () => {
                 src={"https://i.ibb.co.com/Tx912LkL/logo-dk-png.png"}
                 alt="logo"
                 width={500}
-                height={500}
+                height={300}
                 className=" w-full h-full object-cover"
               />
             )}
           </div>
-          <div className=" max-lg:hidden flex mt-10 max-[1400px]:flex-col max-[1400px]:items-start gap-2 items-center">
-            <h1 className=" text-[14px] font-semibold">For Organizations:</h1>
-            <ul className=" font-semibold flex  gap-5 text-[18px] max-[1400px]:text-[15px] items-center">
+          <div className=" max-lg:hidden flex pt-8 pb-5 max-[1400px]:flex-col max-[1400px]:items-start space-x-6 items-center">
+            <h1 className=" text-sm font-semibold">For Organizations:</h1>
+            <ul className="font-semibold flex justify-center space-x-6 text-lg max-[1400px]:text-[15px] items-center">
               {NavInfo?.map((item, index) => (
                 <li key={index} className=" group">
                   <LinkInfo item={item} />
