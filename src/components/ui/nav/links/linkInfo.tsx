@@ -1,9 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaCaretDown } from "react-icons/fa";
-
 const LinkInfo = ({ item }: { item: any }) => {
-  console.log(item?.href)
   return (
     <div>
       <Link href={"/healthcare"}>
@@ -20,6 +18,7 @@ const LinkInfo = ({ item }: { item: any }) => {
           <div className=" w-3/4 p-5 ">
             <div className="w-1/4">
               <h1 className=" text-4xl font-bold text-blue-900 tracking-tight">{item?.title}</h1>
+
               <p>{item?.info?.descriptions}</p>
 
               <Link href={""}>
@@ -29,18 +28,22 @@ const LinkInfo = ({ item }: { item: any }) => {
               </Link>
             </div>
 
-            <div>
-              <div >
-                {
-                  item?.info?.links?.map((item:any,index:any)=>(
-                    <div key={index}>
-                        {item?.href}
+            <div className="">
+              <div className=" grid grid-cols-2 gap-5">
+                {item?.info?.links?.map((item: any, index: any) => (
+                  <div key={index} className="">
+                    <div className=" flex">
+                      <div className=" text-2xl text-blue-500/95">
+                        {item?.icon}
+                      </div>
+                      <h1 className=" text-2xl text-blue-500/95">{item?.title}</h1>
+
                     </div>
-                  ))
-                }
+                    <p>{item?.description}</p>
+                  </div>
+                ))}
               </div>
             </div>
-            
           </div>
           <div className=" w-1/4 p-5 bg-slate-200">df</div>
         </div>
