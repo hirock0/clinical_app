@@ -133,7 +133,7 @@ const Nav = () => {
       </div>
       <div
         className={`${
-          !menuFlag ? "h-0" : "h-[500px] border-t border-t-black "
+          !menuFlag ? "h-0" : "h-full border-t border-t-black "
         } bg-white w-full transition-all`}
       >
         <div className={`${!menuFlag ? "hidden" : "block"} text-black px-[5%]`}>
