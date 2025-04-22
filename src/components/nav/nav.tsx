@@ -12,32 +12,242 @@ const Nav = () => {
   const NavInfo = [
     {
       title: "Healthcare",
+      info: {
+        descriptions:
+          "Hire the right healthcare staff with speed and precision locally or nationwide.",
+        links: [
+          {
+            title: "Allied",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Nursing",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Care Management",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Revenue Cycle",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+        ],
+      },
       href: "/healthcare",
     },
     {
       title: "Life Sciences",
+      info: {
+        descriptions:
+          "Hire the right healthcare staff with speed and precision locally or nationwide.",
+        links: [
+          {
+            title: "Allied",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Nursing",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Care Management",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Revenue Cycle",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+        ],
+      },
       href: "/life_sciences",
     },
     {
       title: "Technology",
+      info: {
+        descriptions:
+          "Hire the right healthcare staff with speed and precision locally or nationwide.",
+        links: [
+          {
+            title: "Allied",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Nursing",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Care Management",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Revenue Cycle",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+        ],
+      },
       href: "/technology",
     },
     {
       title: "Government",
+      info: {
+        descriptions:
+          "Hire the right healthcare staff with speed and precision locally or nationwide.",
+        links: [
+          {
+            title: "Allied",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Nursing",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Care Management",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Revenue Cycle",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+        ],
+      },
       href: "/government",
     },
   ];
   const NavInfo2 = [
     {
       title: "For Job Seekers",
+      info: {
+        descriptions:
+          "Hire the right healthcare staff with speed and precision locally or nationwide.",
+        links: [
+          {
+            title: "Allied",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Nursing",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Care Management",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Revenue Cycle",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+        ],
+      },
       href: "/healthcare",
     },
     {
       title: "Resource Center",
+      info: {
+        descriptions:
+          "Hire the right healthcare staff with speed and precision locally or nationwide.",
+        links: [
+          {
+            title: "Allied",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Nursing",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Care Management",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Revenue Cycle",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+        ],
+      },
       href: "/life_sciences",
     },
     {
       title: "About Us",
+      info: {
+        descriptions:
+          "Hire the right healthcare staff with speed and precision locally or nationwide.",
+        links: [
+          {
+            title: "Allied",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Nursing",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Care Management",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+          {
+            title: "Revenue Cycle",
+            description:
+              "Quickly fill the critical clinical roles that provide effective patient care.",
+            href: "/",
+          },
+        ],
+      },
       href: "/technology",
     },
   ];
@@ -208,7 +418,7 @@ const Nav = () => {
     >
       <div className=" py-[20px] px-[5%] h-full flex items-center justify-between">
         <div className="">
-          <div className=" h-[47.55px] w-[214px] my-[12px] mx-[5px]">
+          <div className=" h-[47.55px] w-[214px] max-lg:h-[35px] max-lg:w-[170px] my-[12px] mx-[5px]">
             {!menuFlag ? (
               <Image
                 src={"https://i.ibb.co.com/7txdX2HG/logo-png.png"}
@@ -232,7 +442,7 @@ const Nav = () => {
             <ul className=" font-semibold flex  gap-5 text-[18px] max-[1400px]:text-[15px] items-center">
               {NavInfo?.map((item, index) => (
                 <li key={index} className=" group">
-                  <LinkInfo title={item?.title} href={item?.href} />
+                  <LinkInfo item={item} />
                 </li>
               ))}
             </ul>
@@ -244,7 +454,7 @@ const Nav = () => {
             <ul className=" font-semibold  h-full flex  gap-5 text-[15px] max-[1400px]:text-[12px]  items-center">
               {NavInfo2?.map((item, index) => (
                 <li key={index} className=" group">
-                  <LinkInfo title={item?.title} href={item?.href} />
+                  <LinkInfo item={item} />
                 </li>
               ))}
             </ul>
@@ -284,7 +494,7 @@ const Nav = () => {
       </div>
       <div
         className={`${
-          !menuFlag ? "h-0" : "h-full border-t border-t-black  "
+          !menuFlag ? "h-0" : "h-full border-t  border-t-black  "
         } bg-white  w-full transition-all`}
       >
         <div className={`${!menuFlag ? "hidden" : "block"} text-black mt-5 `}>

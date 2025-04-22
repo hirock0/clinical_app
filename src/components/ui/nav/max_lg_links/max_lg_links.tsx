@@ -35,14 +35,18 @@ const Max_lg_links = ({ item }: { item: any }) => {
       <div
         className={` ${
           !menuLgFlag && "hidden"
-        } bg-slate-100 px-[5%]  transition-all `}
+        } bg-slate-100 px-[5%] py-4 transition-all `}
       >
         {item?.subtitles?.map((item: any, index: any) => (
-          <Link href={item?.href} key={index} className=" flex items-center">
-            <GoDotFill size={10} />
-            <h1 className=" ml-2 text-[18px] text-[#004582] py-5">{item?.title}</h1>
-            <FaAngleRight size={10} />
-          </Link>
+          <div className="my-10" key={index}>
+            <Link href={item?.href} className=" flex items-center">
+              <GoDotFill size={10} />
+              <h1 className=" ml-2 text-[18px] text-[#004582] ">
+                {item?.title}
+              </h1>
+              <FaAngleRight size={10} />
+            </Link>
+          </div>
         ))}
       </div>
     </div>
